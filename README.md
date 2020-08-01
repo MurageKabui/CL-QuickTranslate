@@ -5,17 +5,20 @@ string and files support
 </details>
 
 ## About
-<details>
-  <summary> 《Why ? what and when? 》</summary>
-  
-  *As present, The Web version of Google Translate opens with standard European language pairs by default 
-(none of which I EVER use)
-yet nowhere in the Google menu is there the possibility to set default languages for translation, neither 
-are the last used pairs synced to my account, which leaves me with the boring options to navigate the
-languages from the drop-down menu or bookmark their syntax appended url for quick and future use. 
-And as a frequent user Itd be very annoying to keep changing them, which led me to a quicker approach to provide
-a one liner solution to it.*
 
+  <summary> 《 About QTranslate 》</summary>
+  
+  *As present, you may have noticed that the Web version of Google Translate opens with standard European language pairs by default
+  (none of which I EVER use) , yet nowhere in the Google menu is there the possibility to set default languages for translation, neither 
+  are the last used pairs synced to my account, which leaves me with the boring option to navigate the
+  languages from the drop-down menu or bookmark their syntax appended url for quick and future use. 
+  And as a frequent user it might be a bit more painful to keep changing them, which led me to a quicker approach to provide
+  a one liner solution to it.*
+
+<details>
+  
+  <summary> 《 idk 》</summary>
+  <p> hello world.</p>
 </details>
 
 
@@ -33,7 +36,7 @@ The ```-l``` switch supports the full language iso name or the [ISO 639-1](https
 
   <summary>List for all the supported languages</summary>
 
-||ISO language name | *ISO 639-1*| d|
+||ISO language name | *[ISO 639-1](https://en.wikipedia.org/wiki/ISO_639-1)*| d|
 |--|--|--|--|
 |1|English | *en*|
 |2|Vietnamese| *vi*|
@@ -55,17 +58,18 @@ The ```-l``` switch supports the full language iso name or the [ISO 639-1](https
   2. list
      * With some
      * Sub bullets
+     
 </details>
 
 # A collapsible section containing code
+
 <details>
-  <summary>Some Examples. (Click to expand!)</summary>
+  
+  <summary>Batch snippet Examples. (Click to expand!)</summary>
   
   ```batch
-    function whatIsLove() {
-      console.log('Baby Don't hurt me. Don't hurt me');
-      return 'No more';
-    }
+	  set "lang = swahili"
+	  for /f "tokens=1,2 delims=." %%a in ('dir /b .txt') do (CL-translator.exe -l %lang% %a
   ```
 </details>
 

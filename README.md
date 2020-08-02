@@ -9,7 +9,7 @@ The ```-l``` switch supports the full language iso name or the [ISO 639-1](https
 # A collapsible section containing code
 <details>
 
-  <summary>Supported languages</summary>
+  <summary>ISO 639 is a standardized nomenclature cheatsheet</summary>
 
 ||ISO language name | *[ISO 639-1](https://en.wikipedia.org/wiki/ISO_639-1)*| *[ISO 639-2/T](https://en.wikipedia.org/wiki/ISO_639-2)*|*[ISO 639-2/B](https://en.wikipedia.org/wiki/ISO_639-2)*|
 |--|--|--|--|--|

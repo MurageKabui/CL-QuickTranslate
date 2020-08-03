@@ -1,7 +1,10 @@
 
-<center><img width="100%" src="./logo.jpg" alt=""></center>
-
-# CL-QuickTranslate
+<center>
+  <img src="./logo.jpg" alt="">
+  
+  # CL-QuickTranslate
+  
+</center>
 
 > *As present, you may have noticed that the Web version of Google Translate opens with standard European language pairs by default
   (none of which I EVER use) , yet nowhere in the Google menu is there the possibility to set default languages for translation, neither 

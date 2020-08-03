@@ -16,8 +16,8 @@ The ```-l``` switch supports the full language iso name or the [ISO 639-1](https
 Currently supported ISO 639 standardized nomenclature cheatsheet.
 These can be used with the ```-l``` switch to set the result language for translation. <br>
 
-Example : <br>
-          ```CL-QuickTranslate.exe -s 'Noche Oscura' -l 'English'``` ....(Using a full name) <br>
+Example : Using a full name :<br>
+          ```CL-QuickTranslate.exe -s 'Noche Oscura' -l 'English'``` <br>
           ... would be the same as running: <br> 
           ```CL-QuickTranslate.exe -s 'Noche Oscura' -l 'En'     ```  ...(Using the ISO 639-2/T prefix) <br>
           ... or also the same as running: <br>

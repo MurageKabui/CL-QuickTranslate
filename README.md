@@ -1,6 +1,6 @@
 
 <p align="center">
-  <img src="https://github.com/KabueMurage/CL-QuickTranslate/blob/master/logo.jpg?raw=true" alt="Sublime's custom image"/>
+  <img src="https://github.com/KabueMurage/CL-QuickTranslate/blob/master/rot.gif?raw=true" alt="Sublime's custom image"/>
 </p>
 
   # CL-QuickTranslate

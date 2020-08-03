@@ -1,5 +1,5 @@
 
-<center><img src="logo.ico" alt=""></center>
+<center><img width="100%" src="./logo.jpg" alt=""></center>
 
 # CL-QuickTranslate
 

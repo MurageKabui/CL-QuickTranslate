@@ -1,6 +1,5 @@
-<center>
-![logo](logo.jpg)
-</center>
+
+<center><img src="logo.ico" alt=""></center>
 
 # CL-QuickTranslate
 

@@ -1,16 +1,31 @@
 # CL-QuickTranslate
-A google aided to translator to translate Strings and files to a preferred language from commandline.
 
+> *As present, you may have noticed that the Web version of Google Translate opens with standard European language pairs by default
+  (none of which I EVER use) , yet nowhere in the Google menu is there the possibility to set default languages for translation, neither 
+  are the last used pairs synced to my account, which leaves me with the boring option to navigate and select the
+  languages from the drop-down menu or bookmark their [syntax appended url](https://translate.google.com/?langpair=en%7sw) for quick and future use. 
+  And as a frequent user it might be a bit more painful to keep changing them, which led me to a quicker approach to provide
+  a one liner solution to it.*
+  
 《》
 Is a google aided translator 
 string and files support 
 The ```-l``` switch supports the full language iso name or the [ISO 639-1](https://en.wikipedia.org/wiki/ISO_639-1) prefix
 
-# A collapsible section containing code
+### Supported languages : 
+Currently supported ISO 639 standardized nomenclature cheatsheet.
+These can be used with the ```-l``` switch to set the result language for translation. <br>
+
+Example : <br>
+          ```CL-QuickTranslate.exe -s 'Noche Oscura' -l 'English'``` ....(Using a full name) <br>
+          ... would be the same as running: <br> 
+          ```CL-QuickTranslate.exe -s 'Noche Oscura' -l 'En'     ```  ...(Using the ISO 639-2/T prefix) <br>
+          ... or also the same as running: <br>
+          ```CL-QuickTranslate.exe -s 'Noche Oscura' -l 'En'     ```  ...(Using the ISO 639-2/T prefix) <br>
 <details>
-
-  <summary>ISO 639 is a standardized nomenclature cheatsheet</summary>
-
+ 
+  <summary>See full list.</summary>
+  
 ||ISO language name | *[ISO 639-1](https://en.wikipedia.org/wiki/ISO_639-1)*| *[ISO 639-2/T](https://en.wikipedia.org/wiki/ISO_639-2)*|*[ISO 639-2/B](https://en.wikipedia.org/wiki/ISO_639-2)*|
 |--|--|--|--|--|
 |1|English | *en*||

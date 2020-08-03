@@ -1,4 +1,5 @@
 
+
 <p align="center">
   <img src="https://github.com/KabueMurage/CL-QuickTranslate/blob/master/giffy.gif?raw=true" alt=""/>
 </p>
@@ -15,8 +16,7 @@
  </div>
  
 《》
-Is a google aided translator 
-string and files support 
+Is a google aided translator supports string and files support 
 The ```-l``` switch supports the full language iso name or the [ISO 639-1](https://en.wikipedia.org/wiki/ISO_639-1) prefix
 
 ### Supported languages : 
@@ -24,9 +24,7 @@ Currently supported ISO 639 standardized nomenclature cheatsheet.
 These can be used with the ```-l``` switch to set the result language for translation. <br>
 
 Example : <br>
-```batch
-  CL-QuickTranslate.exe -s 'Noche Oscura' -l 'English'
-``` 
+```CL-QuickTranslate.exe -s 'Noche Oscura' -l 'English'``` <br>
 ....(Using a full name) <br>
           ... would be the same as running: <br> 
           ```CL-QuickTranslate.exe -s 'Noche Oscura' -l 'En'     ```  ...(Using the ISO 639-2/T prefix) <br>
@@ -34,9 +32,12 @@ Example : <br>
           ```CL-QuickTranslate.exe -s 'Noche Oscura' -l 'En'     ```  ...(Using the ISO 639-2/T prefix) <br>
 <details>
  
-  <summary>See full list.</summary>
+  <summary> Implimented ISO (International Organization for Standardization) codes cheat sheet. </summary>
   
-||ISO language name | *[ISO 639-1](https://en.wikipedia.org/wiki/ISO_639-1)*| *[ISO 639-2/T](https://en.wikipedia.org/wiki/ISO_639-2)*|*[ISO 639-2/B](https://en.wikipedia.org/wiki/ISO_639-2)*|
+  > The list below shows the currently implimented ISO ids, sorted alphabetically by language, which may be used
+  > with the ```-l``` switch to set the result language identity for translation.
+
+|--|ISO language name | *[ISO 639-1](https://en.wikipedia.org/wiki/ISO_639-1)*| *[ISO 639-2/T](https://en.wikipedia.org/wiki/ISO_639-2)*|*[ISO 639-2/B](https://en.wikipedia.org/wiki/ISO_639-2)*|
 |--|--|--|--|--|
 |1|English | *en*||
 |2|Afrikaans| *af*|*afr*|afr|

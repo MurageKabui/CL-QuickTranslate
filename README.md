@@ -1,6 +1,8 @@
 
-<div style="text-align:center"><img src="./logo.jpg" alt=""
-  
+<p align="center">
+  <img src="https://github.com/KabueMurage/CL-QuickTranslate/blob/master/logo.jpg?raw=true" alt="Sublime's custom image"/>
+</p>
+
   # CL-QuickTranslate
   
 

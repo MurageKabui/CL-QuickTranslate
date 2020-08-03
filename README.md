@@ -1,3 +1,7 @@
+<center>
+![logo](logo.jpg)
+</center>
+
 # CL-QuickTranslate
 
 > *As present, you may have noticed that the Web version of Google Translate opens with standard European language pairs by default
@@ -16,8 +20,11 @@ The ```-l``` switch supports the full language iso name or the [ISO 639-1](https
 Currently supported ISO 639 standardized nomenclature cheatsheet.
 These can be used with the ```-l``` switch to set the result language for translation. <br>
 
-Example : Using a full name :<br>
-          ```CL-QuickTranslate.exe -s 'Noche Oscura' -l 'English'``` <br>
+Example : <br>
+```batch
+  CL-QuickTranslate.exe -s 'Noche Oscura' -l 'English'
+``` 
+....(Using a full name) <br>
           ... would be the same as running: <br> 
           ```CL-QuickTranslate.exe -s 'Noche Oscura' -l 'En'     ```  ...(Using the ISO 639-2/T prefix) <br>
           ... or also the same as running: <br>

@@ -16,7 +16,12 @@
  </div>
  
 《》
-Is a google aided translator supports string and files support 
+For the ```-l``` switch , all standards are backward compatible and fall back to the recognised language ISO prefix officially used by the Google API url,
+meaning that the command;
+
+```CL-QuickTranslate.exe -s 'Noche Oscura' -l 'English'``` , using a full name would be the same as running ; ```CL-QuickTranslate.exe -s 'Noche Oscura' -l 'En'```
+(Using the ISO 639-2/T prefix) ... or also the same as running:  ```CL-QuickTranslate.exe -s 'Noche Oscura' -l 'En'     ```  ...(Using the ISO 639-2/T prefix) <br>
+
 The ```-l``` switch supports the full language iso name or the [ISO 639-1](https://en.wikipedia.org/wiki/ISO_639-1) prefix
 
 ### Supported languages : 
@@ -24,12 +29,7 @@ Currently supported ISO 639 standardized nomenclature cheatsheet.
 These can be used with the ```-l``` switch to set the result language for translation. <br>
 
 Example : <br>
-```CL-QuickTranslate.exe -s 'Noche Oscura' -l 'English'``` <br>
-....(Using a full name) <br>
-          ... would be the same as running: <br> 
-          ```CL-QuickTranslate.exe -s 'Noche Oscura' -l 'En'     ```  ...(Using the ISO 639-2/T prefix) <br>
-          ... or also the same as running: <br>
-          ```CL-QuickTranslate.exe -s 'Noche Oscura' -l 'En'     ```  ...(Using the ISO 639-2/T prefix) <br>
+
 <details>
  
   <summary> Implimented ISO (International Organization for Standardization) codes cheat sheet. </summary>

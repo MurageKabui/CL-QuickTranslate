@@ -1,18 +1,17 @@
 
-<center>
-  <img src="./logo.jpg" alt="">
+<div style="text-align:center"><img src="./logo.jpg" alt=""
   
   # CL-QuickTranslate
   
-</center>
 
-> *As present, you may have noticed that the Web version of Google Translate opens with standard European language pairs by default
+  *As present, you may have noticed that the Web version of Google Translate opens with standard European language pairs by default
   (none of which I EVER use) , yet nowhere in the Google menu is there the possibility to set default languages for translation, neither 
   are the last used pairs synced to my account, which leaves me with the boring option to navigate and select the
   languages from the drop-down menu or bookmark their [syntax appended url](https://translate.google.com/?langpair=en%7sw) for quick and future use. 
   And as a frequent user it might be a bit more painful to keep changing them, which led me to a quicker approach to provide
   a one liner solution to it.*
-  
+ </div>
+ 
 《》
 Is a google aided translator 
 string and files support 

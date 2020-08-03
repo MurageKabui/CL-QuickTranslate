@@ -1,11 +1,10 @@
 
 <p align="center">
-  <img src="https://github.com/KabueMurage/CL-QuickTranslate/blob/master/giffy.gif?raw=true" alt="Sublime's custom image"/>
-
+  <img src="https://github.com/KabueMurage/CL-QuickTranslate/blob/master/giffy.gif?raw=true" alt=""/>
+</p>
 
   # CL-QuickTranslate
-  
-</p>
+ 
 
   *As present, you may have noticed that the Web version of Google Translate opens with standard European language pairs by default
   (none of which I EVER use) , yet nowhere in the Google menu is there the possibility to set default languages for translation, neither 

@@ -12,6 +12,9 @@
   them from the drop-down menu or bookmark their [syntax appended url](https://translate.google.com/?langpair=en%7sw) for quick future use. 
   And as a frequent user it might be a bit more painful to keep changing them.*
   
+  To save time, QTranslate offers a quick solution to use one liners to achieve the same goal , and with the possibility to fully automate the process
+  using batch scrips for your desired programming langauges.
+  
  </div>
  
  |Parameter|Function|Example|
@@ -21,6 +24,7 @@
  -f|Define a file input, |`Qtranslate.exe -f 'noche oscura.txt' -l 'swahili' `|
  
  
+
 For the ```-l``` switch , all standards are backward compatible and fall back to the recognised language ISO prefix officially used by the Google API url,
 meaning that the command: ```CL-QuickTranslate.exe -s 'Noche Oscura' -l 'English'``` (Using a native name) would be the same as running : ```CL-QuickTranslate.exe -s 'Noche Oscura' -l 'En'``` (Using the ISO 639-1/T prefix)  and also the same as running:  ```CL-QuickTranslate.exe -s 'Noche Oscura' -l 'En'```  (Using the ISO 639-2/T prefix) <br>
 

@@ -5,11 +5,10 @@
 </p>
 
   # CL-QuickTranslate
- 
 
   *As present, you may have noticed that the Web version of Google Translate opens with standard European language pairs by default
-  (none of which I EVER use) , neither nowhere in the Google menu is there the possibility to set default languages for translation nor 
-  are the last used pairs synced to my account, which leaves me with the boring alternative to navigate and select the
+  (none of which you may EVER use) , neither nowhere in the [Google menu](https://translate.google.com) is there the possibility to set default
+  languages for translation nor are the last used pairs synced to my account, which leaves you with the boring alternative to navigate and select the
   languages from the drop-down menu or bookmark their [syntax appended url](https://translate.google.com/?langpair=en%7sw) for quick future use. 
   And as a frequent user it might be a bit more painful to keep changing them, which led me to a quicker approach to provide
   a one liner solution to it.*
@@ -32,7 +31,7 @@ Example : <br>
 
 <details>
  
-  <summary> Implimented ISO (International Organization for Standardization) codes cheat sheet. </summary>
+  <summary> Implimented ISO codes cheat sheet.(Reveal hidden contents.) </summary>
   
   > The list below shows the currently implimented ISO ids, sorted alphabetically by language, which may be used
   > with the ```-l``` switch to set the result language identity for translation.

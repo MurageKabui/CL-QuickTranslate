@@ -14,6 +14,14 @@
   a one liner solution to it.*
  </div>
  
+ ### Syntax and Usage : 
+ 
+ 
+ |Parameter|Function|Example|
+ |--|--|--|
+ |-s|defines a string input.|`Qtranslate.exe -s 'hello world' -l 'swahili' `
+ 
+ 
 《》
 For the ```-l``` switch , all standards are backward compatible and fall back to the recognised language ISO prefix officially used by the Google API url,
 meaning that the command: ```CL-QuickTranslate.exe -s 'Noche Oscura' -l 'English'``` (Using a native name) would be the same as running : ```CL-QuickTranslate.exe -s 'Noche Oscura' -l 'En'``` (Using the ISO 639-1/T prefix)  and also the same as running:  ```CL-QuickTranslate.exe -s 'Noche Oscura' -l 'En'```  (Using the ISO 639-2/T prefix) <br>
@@ -41,14 +49,14 @@ Example : <br>
 |4|Amharic|*am*|*amh*|amh|
 |5|Arabic|*ar*|*ara*|ara|
 |6|Armenian|*hy*|*hye*|arm|
-|7|Azerbaijani|*az*|*aze*||
+|7|Azerbaijani|*az*|*aze*|-|
 |8|Basque|*eu*|*eus*|baq|
 |9|Belarusian|*be*|*bel*|bel|
 |10|Bengali|*bn*|*ben*|ben|
 |11|Bosnian|*bs*|*bos*|bos|
 |12|Bulgarian|*bg*|bul|bul|
 |13|Catalan,Valencian|*ca*|*cat*|cat|
-|14|Cebuano|*ceb*|||
+|14|Cebuano|*ceb*|-|-|
 |15|Chichewa|*ny*|*nya*|nya|
 |16|Corsican|*co*|*cos*|cos|
 |17|Croatian|*hr*|*hrv*|hrv|
@@ -57,12 +65,17 @@ Example : <br>
 |20|Dutch, Flemish|*nl*|*nld*|dut|
 |21|Esperanto|*eo*|*epo*|epo|
 |22|Estonian|*et*|est|est|
-|23|Filipino|*tl*|||
+|23|Filipino|*tl*|-|-|
 |24|Finnish|*fi*|*fin*|fin|
 |25|french|*fr*|*fra*|fre|
 |26|Frisian|*fy*|*fry*||
-
-  
+|27|Georgian|*gl*|*glg*|glg|
+|28|German|*de*|*deu*|ger|
+|29|Haitian,Haitian Creole|*ht*|*hat*|hat|
+|30|Hausa|*ha*|*hau*|hau|
+|31|Hawaiian|*haw*|-|-|
+|32|Hmong|*hmn*|-|-|
+ 
 </details>
 
 

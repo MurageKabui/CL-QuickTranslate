@@ -16,10 +16,7 @@
  
 《》
 For the ```-l``` switch , all standards are backward compatible and fall back to the recognised language ISO prefix officially used by the Google API url,
-meaning that the command;
-
-```CL-QuickTranslate.exe -s 'Noche Oscura' -l 'English'``` , using a full name would be the same as running ; ```CL-QuickTranslate.exe -s 'Noche Oscura' -l 'En'```
-(Using the ISO 639-2/T prefix) ... or also the same as running:  ```CL-QuickTranslate.exe -s 'Noche Oscura' -l 'En'     ```  ...(Using the ISO 639-2/T prefix) <br>
+meaning that the command: ```CL-QuickTranslate.exe -s 'Noche Oscura' -l 'English'``` (Using a full name) would be the same as running : ```CL-QuickTranslate.exe -s 'Noche Oscura' -l 'En'``` (Using the ISO 639-2/T prefix)  and also the same as running:  ```CL-QuickTranslate.exe -s 'Noche Oscura' -l 'En'```  (Using the ISO 639-2/T prefix) <br>
 
 The ```-l``` switch supports the full language iso name or the [ISO 639-1](https://en.wikipedia.org/wiki/ISO_639-1) prefix
 
@@ -31,7 +28,7 @@ Example : <br>
 
 <details>
  
-  <summary> Implimented ISO codes cheat sheet.(Reveal hidden contents.) </summary>
+  <summary> Implimented ISO codes cheat sheet (Reveal hidden contents.) </summary>
   
   > The list below shows the currently implimented ISO ids, sorted alphabetically by language, which may be used
   > with the ```-l``` switch to set the result language identity for translation.

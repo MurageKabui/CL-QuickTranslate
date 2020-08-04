@@ -65,21 +65,36 @@ Example : <br>
 |20|Dutch, Flemish|*nl*|*nld*|dut|
 |21|Esperanto|*eo*|*epo*|epo|
 |22|Estonian|*et*|est|est|
-|23|Filipino|*tl*|-|-|
+|23|Filipino|*tl*|tl|tl|
 |24|Finnish|*fi*|*fin*|fin|
 |25|french|*fr*|*fra*|fre|
-|26|Frisian|*fy*|*fry*||
+|26|Frisian|*fy*|*fry*|fry|
 |27|Georgian|*gl*|*glg*|glg|
 |28|German|*de*|*deu*|ger|
 |29|Haitian,Haitian Creole|*ht*|*hat*|hat|
 |30|Hausa|*ha*|*hau*|hau|
-|31|Hawaiian|*haw*|-|-|
-|32|Hmong|*hmn*|-|-|
- 
+|31|Hawaiian|*haw*|haw|haw|
+|32|Hmong|*hmn*|hmn|hmn|
+|33|Hungarian|*hu*|hun|hun|
+|34|Icelandic|*is*|*isl*|ice|
+|35|Igbo|*ig*|*ibo*|ibo|
+|36|Indonesian|*id*|*ind*|ind|
+|37|Irish|*ga*|*gle*|gle|
+|38|Italian|*it*|ita|ita|
+|39|Khmer|*km*|*km*|km|
+|40|Latin|*la*|*lat*|lat|lat|
+|41|Latvian|*lv*|*lav*|lav|
+|42|Lithuanian|*lt*|*lit*|lit|
+|43|Luxembourgish|*lb*|*ltz*|ltz|
+|44|Malagasy|*mg*|*mlg*|mlg|
+|45|Malay|*ms*|*msa*|msa|
+|46|Maltese|*mt*|*mlt*|mlt|
+|47|Maori|*mi*|*mri*|mao|
+
 </details>
 
 
-### Examples:
+### Examples and Snippets:
 ```batch
  CL-translate.exe -s 'hello world' -l 'german'
  ```

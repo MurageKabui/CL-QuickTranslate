@@ -8,10 +8,10 @@
 
   *As present, you may have noticed that the Web version of Google Translate opens with standard European language pairs by default
   (none of which you may EVER use) , neither nowhere in the [Langauges menu](https://translate.google.com) is there the possibility to set default
-  pair languages for translation nor are the last used pairs synced to my account, which leaves you with the boring alternative to navigate and select the
+  pair languages for translation , nor are the last used pairs synced to your account, which leaves you with the boring alternative to navigate and select the
   them from the drop-down menu or bookmark their [syntax appended url](https://translate.google.com/?langpair=en%7sw) for quick future use. 
-  And as a frequent user it might be a bit more painful to keep changing them, which led me to a quicker approach to provide
-  a one liner solution to it.*
+  And as a frequent user it might be a bit more painful to keep changing them.*
+  
  </div>
  
  |Parameter|Function|Example|

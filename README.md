@@ -13,7 +13,7 @@
   And as a frequent user it might be a bit more painful to keep changing them.*
   
   To save time, QTranslate offers a quick solution to use one liners to achieve the same goal , and with the possibility to fully automate the process
-  using batch scrips for your desired programming langauges.
+  using batch scrips or just any of your desired programming langauges.
   
  </div>
  

@@ -36,7 +36,7 @@ Example : <br>
 
 <details>
  
-  <summary> Implimented ISO codes cheat sheet (Reveal hidden contents.) </summary>
+  <summary> ISO codes cheat sheet [Click to reveal hidden contents.] </summary>
   
   > The list below shows the currently implimented ISO ids, sorted alphabetically by language, which may be used
   > with the ```-l``` switch to set the result language identity for translation.
@@ -90,6 +90,14 @@ Example : <br>
 |45|Malay|*ms*|*msa*|msa|
 |46|Maltese|*mt*|*mlt*|mlt|
 |47|Maori|*mi*|*mri*|mao|
+|48|Norwegian|*no*|*nor*|nor|
+|49|Polish|*pl*|*pol*|pol|
+|50|Portuguese|*pt*|*por*|por|
+|51|Romanian,moldavian|*ro*|*ron*|rum|
+|52|Sesotho|*st*|*sot*|sot|
+|53|Slovak|*sk*|*slk*|slk|
+|54|Slovenian|*sl*|*slv*|slv|
+|55|
 
 </details>
 

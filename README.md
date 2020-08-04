@@ -1,7 +1,7 @@
 
 
 <p align="center">
-  <img src="https://github.com/KabueMurage/CL-QuickTranslate/src/img/blob/master/logo.jpeg?raw=true" alt=""/>
+  <img src="https://github.com/KabueMurage/CL-QuickTranslate/blob/master/src/img/logo.jpeg?raw=true" alt=""/>
 </p>
 
   # CL-QuickTranslate

@@ -7,26 +7,28 @@
   # CL-QuickTranslate
 
   *As present, you may have noticed that the Web version of Google Translate opens with standard European language pairs by default
-  (none of which you may EVER use) , neither nowhere in the [Google menu](https://translate.google.com) is there the possibility to set default
-  languages for translation nor are the last used pairs synced to my account, which leaves you with the boring alternative to navigate and select the
-  languages from the drop-down menu or bookmark their [syntax appended url](https://translate.google.com/?langpair=en%7sw) for quick future use. 
+  (none of which you may EVER use) , neither nowhere in the [Langauges menu](https://translate.google.com) is there the possibility to set default
+  pair languages for translation nor are the last used pairs synced to my account, which leaves you with the boring alternative to navigate and select the
+  them from the drop-down menu or bookmark their [syntax appended url](https://translate.google.com/?langpair=en%7sw) for quick future use. 
   And as a frequent user it might be a bit more painful to keep changing them, which led me to a quicker approach to provide
   a one liner solution to it.*
  </div>
  
- ### Syntax and Usage : 
- 
- 
  |Parameter|Function|Example|
  |--|--|--|
- |-s|defines a string input.|`Qtranslate.exe -s 'hello world' -l 'swahili' `
+ |-s|Defines a string input.|`Qtranslate.exe -s 'hello world'`|
+ -l|Sets a langauge. The Source langauge is will be auto detected.|`Qtranslate.exe -s 'hello world' -l 'swahili' ` |
+ -f|Define a file input, |`Qtranslate.exe -f 'noche oscura.txt' -l 'swahili' `|
  
  
-《》
 For the ```-l``` switch , all standards are backward compatible and fall back to the recognised language ISO prefix officially used by the Google API url,
 meaning that the command: ```CL-QuickTranslate.exe -s 'Noche Oscura' -l 'English'``` (Using a native name) would be the same as running : ```CL-QuickTranslate.exe -s 'Noche Oscura' -l 'En'``` (Using the ISO 639-1/T prefix)  and also the same as running:  ```CL-QuickTranslate.exe -s 'Noche Oscura' -l 'En'```  (Using the ISO 639-2/T prefix) <br>
 
-The ```-l``` switch supports the full language iso name or the [ISO 639-1](https://en.wikipedia.org/wiki/ISO_639-1) prefix
+
+### Support.
+
+Some result output may contain non ASCII characters causing you to see small boxes ▯ ("tofu character") or question marks at the CLI and parsed file 
+handles, in this case you are missing corresponding fonts for that writing system.
 
 ### Supported languages : 
 Currently supported ISO 639 standardized nomenclature cheatsheet.

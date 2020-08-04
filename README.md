@@ -56,7 +56,7 @@ Example : <br>
 |11|Bosnian|*bs*|*bos*|bos|
 |12|Bulgarian|*bg*|bul|bul|
 |13|Catalan,Valencian|*ca*|*cat*|cat|
-|14|Cebuano|*ceb*|-|-|
+|14|Cebuano|*ceb*|ceb|ceb|
 |15|Chichewa|*ny*|*nya*|nya|
 |16|Corsican|*co*|*cos*|cos|
 |17|Croatian|*hr*|*hrv*|hrv|
@@ -97,7 +97,17 @@ Example : <br>
 |52|Sesotho|*st*|*sot*|sot|
 |53|Slovak|*sk*|*slk*|slk|
 |54|Slovenian|*sl*|*slv*|slv|
-|55|
+|55|Somali|*so*|*som*|som|
+|56|Spanish,Castilian|*es*|*spa*|spa|
+|57|Swahili, Kiswahili|*sw*|*swa*|swa|
+|58|Swedish|*sv*|*swe*|swe|
+|59|Turkish|*tr*|*tur*|tur|
+|60|Uzbek|*uz*|*uzb*|uzb|
+|61|Vietnamese|*vi*|*vie*|vie|
+|62|Welsh|*cy*|*cym*|wel|
+|63|Xhosa|*xh*|*xho*|xho|
+|64|Zulu|*zu*|*zul*|zul|
+
 
 </details>
 

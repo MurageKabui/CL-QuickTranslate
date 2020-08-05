@@ -13,7 +13,7 @@
   And as a frequent user it might be a bit more painful to keep changing them.*
   
   To save time, QTranslate offers a quick solution to use one liners to achieve the same goal , and with the possibility to fully automate the process
-  using batch scrips or just any of your desired programming langauges.
+  using batch scrips or just any other desired programming langauges.
   
  </div>
  
@@ -21,7 +21,7 @@
  |--|--|--|
  |-s|Defines a string input.|`Qtranslate.exe -s 'hello world'`|
  -l|Sets a langauge. The Source langauge is will be auto detected.|`Qtranslate.exe -s 'hello world' -l 'swahili' ` |
- -f|Define a file input, |`Qtranslate.exe -f 'noche oscura.txt' -l 'swahili' `|
+ -f|Define a file input. |`Qtranslate.exe -f 'noche oscura.txt' -l 'English'`|
  
  
 

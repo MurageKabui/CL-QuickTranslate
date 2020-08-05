@@ -6,7 +6,7 @@
 
   # CL-QuickTranslate
   
- <img src="https://github.com/KabueMurage/CL-QuickTranslate/blob/master/src/img/logo.jpg?raw=true" align="right" alt="">
+ <img src="https://github.com/KabueMurage/CL-QuickTranslate/blob/master/src/img/logo.jpg?raw=true" align="left" alt="">
   
   
   *As present, you may have noticed that the Web version of Google Translate opens with standard European language pairs by default
@@ -17,9 +17,11 @@
   
  
   To save time, QTranslate offers a quick solution to use one liners to achieve the same goal , and with the possibility to fully automate the process
-  using batch scrips or just any other desired programming langauge.
+  using batch scrips or just any other desired programming langauge. 
   
- </div>
+  ### Installation
+  Download and place the file in [path](https://en.wikipedia.org/wiki/PATH_%28variable%29)
+
  
  |Parameter|Function|Example|
  |--|--|--|
@@ -33,7 +35,9 @@ For the ```-l``` switch , all standards are backward compatible and fall back to
 meaning that the command: ```CL-QuickTranslate.exe -s 'Noche Oscura' -l 'English'``` (Using a native name) would be the same as running : ```CL-QuickTranslate.exe -s 'Noche Oscura' -l 'En'``` (Using the ISO 639-1/T prefix)  and also the same as running:  ```CL-QuickTranslate.exe -s 'Noche Oscura' -l 'En'```  (Using the ISO 639-2/T prefix) <br>
 
 
-### Support.
+### Some Common Issues.
+Some langauges may contain non ASCII characters which are usually rendered as a question mark inside a diamond in files streams and question marks within the commandline
+interface signal errors in invalid Unicode streams; 
 
 Some result output may contain non ASCII characters causing you to see small boxes ▯ ("tofu character") or question marks at the CLI and parsed file 
 handles, in this case you are missing corresponding fonts for that writing system.

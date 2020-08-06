@@ -38,13 +38,13 @@ meaning that the command: ```Qtranslate.exe -s 'Noche Oscura' -l 'Albanian'``` (
 
 ### Some Common Issues.
 Some languages may contain non ASCII characters which are usually rendered as a question mark inside a diamond in files streams and question marks within the commandline
-interface, therefore they haven't been included, although you can view all the supported languages here .
+interface, therefore they haven't been included, although you can view all the supported languages below.
 <details>
  
   <summary> ISO codes cheat sheet [Click to reveal hidden contents.] </summary>
   
   > The list below shows the currently implemented ISO ids, sorted alphabetically by language, which may be used
-  > with the ```-l``` switch to set the result language identity for translation.
+  > with the ```-l``` switch to set the destination language for translation.
 
 ||ISO language name | *[ISO 639-1](https://en.wikipedia.org/wiki/ISO_639-1)*| *[ISO 639-2/T](https://en.wikipedia.org/wiki/ISO_639-2)*|*[ISO 639-2/B](https://en.wikipedia.org/wiki/ISO_639-2)*|
 |--|--|--|--|--|
@@ -116,10 +116,4 @@ interface, therefore they haven't been included, although you can view all the s
 
 </details>
 
-
-### Examples and Snippets:
-```batch
- CL-translate.exe -s 'hello world' -l 'german'
- ```
- 
 ###

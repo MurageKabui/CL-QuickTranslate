@@ -32,7 +32,7 @@
  
 
 For the ```-l``` switch , all standards are backward compatible and fall back to the recognised language ISO prefix officially used by the Google API url,
-meaning that the command: ```CL-QuickTranslate.exe -s 'Noche Oscura' -l 'English'``` (Using a native name) would be the same as running : ```CL-QuickTranslate.exe -s 'Noche Oscura' -l 'En'``` (Using the ISO 639-1/T prefix)  and also the same as running:  ```CL-QuickTranslate.exe -s 'Noche Oscura' -l 'En'```  (Using the ISO 639-2/T prefix) <br>
+meaning that the command: ```Qtranslate.exe -s 'Noche Oscura' -l 'English'``` (Using a native name) would be the same as running : ```Qtranslate.exe -s 'Noche Oscura' -l 'En'``` (Using the ISO 639-1/T prefix)  and also the same as running:  ```Qtranslate.exe -s 'Noche Oscura' -l 'En'```  (Using the ISO 639-2/T prefix) <br>
 
 
 ### Some Common Issues.

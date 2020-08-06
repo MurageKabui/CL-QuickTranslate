@@ -10,7 +10,7 @@
   
   
   *As present, you may have noticed that the Web version of Google Translate opens with standard European language pairs by default
-  (none of which you may EVER use) , neither nowhere in the [Langauges menu](https://translate.google.com) is there the possibility to set default
+  (none of which you may EVER use) , neither nowhere in the [Languages menu](https://translate.google.com) is there the possibility to set default
   pair languages for translation , nor are the last used pairs synced to your account, which leaves you with the boring alternative to navigate and select the
   them from the drop-down menu or bookmark their [syntax appended url](https://translate.google.com/?langpair=en%7sw) for quick future use. 
   And as a frequent user it might be a bit more painful to keep changing them.*
@@ -18,7 +18,7 @@
  
   To save time, this program offers a quick solution to use one liners to achieve the same goal , and with the possibility to fully automate the process
   using batch scrips or just any other desired programming langauge. Quite useful when you want to translate simple words/sentences and file contents to 
-  any desired langauge. ie ```QTranslate.exe -f "Discord_Server_Rules.txt" -l french >> Fr_DiscordRules.txt```
+  any desired langauge. i.e ```QTranslate.exe -f "Discord_Server_Rules.txt" -l french >> Fr_DiscordRules.txt```
   
   
   ### Installation
@@ -29,34 +29,24 @@
  |--|--|--|
  |-s|Defines a string input.|`Qtranslate.exe -s 'hello world'`|
  |-l|Sets a langauge. The Source langauge is will be auto detected.|`Qtranslate.exe -s 'hello world' -l 'swahili' ` |
- |-f|Define a file input. |`Qtranslate.exe -f 'noche oscura.txt' -l 'English'`|
+ |-f|Define a file input. |`Qtranslate.exe -f 'noche oscura.txt' -l 'English' >> "En_NocheOscura.txt"`|
  |-ver|Get the version number. |`Qtranslate.exe -ver`|
 
-For the ```-l``` switch , all standards are backward compatible and fall back to the recognised language ISO prefix officially used by the Google API url,
-meaning that the command: ```Qtranslate.exe -s 'Noche Oscura' -l 'English'``` (Using a native name) would be the same as running : ```Qtranslate.exe -s 'Noche Oscura' -l 'En'``` (Using the ISO 639-1/T prefix)  and also the same as running:  ```Qtranslate.exe -s 'Noche Oscura' -l 'En'```  (Using the ISO 639-2/T prefix) <br>
+For the ```-l``` switch , all standards are backward compatible and fall back to the recognized  ISO 639-1 language prefix which is normally used by the Google Translate API ,
+meaning that the command: ```Qtranslate.exe -s 'Noche Oscura' -l 'Albanian'``` (Using a native name) would be the same as running : ```Qtranslate.exe -s 'Noche Oscura' -l 'sq'``` (Using the ISO 639-1 prefix) , also the same as running:  ```Qtranslate.exe -s 'Noche Oscura' -l 'sqi'```  (Using the ISO 639-2/T prefix)  and  also the same as ```Qtranslate.exe -s 'Noche Oscura' -l 'alb'```  (Using the ISO 639-2/B prefix) <br>
 
 
 ### Some Common Issues.
-Some langauges may contain non ASCII characters which are usually rendered as a question mark inside a diamond in files streams and question marks within the commandline
-interface signal errors in invalid Unicode streams; 
-
-Some result output may contain non ASCII characters causing you to see small boxes ▯ ("tofu character") or question marks at the CLI and parsed file 
-handles, in this case you are missing corresponding fonts for that writing system.
-
-### Supported languages : 
-Currently supported ISO 639 standardized nomenclature cheatsheet.
-These can be used with the ```-l``` switch to set the result language for translation. <br>
-
-Example : <br>
-
+Some languages may contain non ASCII characters which are usually rendered as a question mark inside a diamond in files streams and question marks within the commandline
+interface, therefore they haven't been included, although you can view all the supported languages here .
 <details>
  
   <summary> ISO codes cheat sheet [Click to reveal hidden contents.] </summary>
   
-  > The list below shows the currently implimented ISO ids, sorted alphabetically by language, which may be used
+  > The list below shows the currently implemented ISO ids, sorted alphabetically by language, which may be used
   > with the ```-l``` switch to set the result language identity for translation.
 
-|--|ISO language name | *[ISO 639-1](https://en.wikipedia.org/wiki/ISO_639-1)*| *[ISO 639-2/T](https://en.wikipedia.org/wiki/ISO_639-2)*|*[ISO 639-2/B](https://en.wikipedia.org/wiki/ISO_639-2)*|
+||ISO language name | *[ISO 639-1](https://en.wikipedia.org/wiki/ISO_639-1)*| *[ISO 639-2/T](https://en.wikipedia.org/wiki/ISO_639-2)*|*[ISO 639-2/B](https://en.wikipedia.org/wiki/ISO_639-2)*|
 |--|--|--|--|--|
 |1|English |*en*|*eng*|eng|
 |2|Afrikaans|*af*|*afr*|afr|

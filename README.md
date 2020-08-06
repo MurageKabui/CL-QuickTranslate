@@ -18,12 +18,13 @@
  
   To save time, this program offers a quick solution to use one liners to achieve the same goal , and with the possibility to fully automate the process
   using batch scrips or just any other desired programming langauge. Quite useful when you want to translate simple words/sentences and file contents to 
-  any desired langauge. i.e ```QTranslate.exe -f "Discord Server Rules.txt" -l "french" >> Fr_DiscordRules.txt```
+  any desired langauge. i.e <br> ```QTranslate.exe -f "My Discord Server Rules.txt" -l "french" >> Fr_DiscordRules.txt```
   
   
   ### Installation
   Download and add to [path](https://en.wikipedia.org/wiki/PATH_%28variable%29).
 
+### Syntax and Usage:
  
  |Parameter|Function|Example|
  |--|--|--|
@@ -115,5 +116,6 @@ interface, therefore they haven't been included, although you can view all the s
 
 
 </details>
+
 
 ###

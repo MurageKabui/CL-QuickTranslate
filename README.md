@@ -17,7 +17,9 @@
   
  
   To save time, this program offers a quick solution to use one liners to achieve the same goal , and with the possibility to fully automate the process
-  using batch scrips or just any other desired programming langauge. 
+  using batch scrips or just any other desired programming langauge. Quite useful when you want to translate simple words/sentences and file contents to 
+  any desired langauge. ie ```QTranslate.exe -f "Discord_Server_Rules.txt" -l french >> Fr_DiscordRules.txt```
+  
   
   ### Installation
   Download and place the file in [path](https://en.wikipedia.org/wiki/PATH_%28variable%29)
@@ -26,10 +28,9 @@
  |Parameter|Function|Example|
  |--|--|--|
  |-s|Defines a string input.|`Qtranslate.exe -s 'hello world'`|
- -l|Sets a langauge. The Source langauge is will be auto detected.|`Qtranslate.exe -s 'hello world' -l 'swahili' ` |
- -f|Define a file input. |`Qtranslate.exe -f 'noche oscura.txt' -l 'English'`|
- 
- 
+ |-l|Sets a langauge. The Source langauge is will be auto detected.|`Qtranslate.exe -s 'hello world' -l 'swahili' ` |
+ |-f|Define a file input. |`Qtranslate.exe -f 'noche oscura.txt' -l 'English'`|
+ |-ver|Get the version number. |`Qtranslate.exe -ver`|
 
 For the ```-l``` switch , all standards are backward compatible and fall back to the recognised language ISO prefix officially used by the Google API url,
 meaning that the command: ```Qtranslate.exe -s 'Noche Oscura' -l 'English'``` (Using a native name) would be the same as running : ```Qtranslate.exe -s 'Noche Oscura' -l 'En'``` (Using the ISO 639-1/T prefix)  and also the same as running:  ```Qtranslate.exe -s 'Noche Oscura' -l 'En'```  (Using the ISO 639-2/T prefix) <br>

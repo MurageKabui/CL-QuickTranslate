@@ -30,7 +30,7 @@
  |--|--|--|
  |-s|Defines a string input.|`Qtranslate.exe -s 'hello world'`|
  |-l|Sets a langauge. The Source langauge is will be auto detected.|`Qtranslate.exe -s 'hello world' -l 'swahili' ` |
- |-f|Define a file input. |`Qtranslate.exe -f 'noche oscura.txt' -l 'English' >> "En_NocheOscura.txt"`|
+ |-f|Define a file input. The Supported filetypes are: <br> .txt, .lrc, .rtf, .md, .ini|`Qtranslate.exe -f 'noche oscura.txt' -l 'English' >> "En_NocheOscura.txt"`|
  |-ver|Get the version number. |`Qtranslate.exe -ver`|
 
 For the ```-l``` switch , all standards are backward compatible and fall back to the recognized  ISO 639-1 language prefix which is normally used by the Google Translate API ,

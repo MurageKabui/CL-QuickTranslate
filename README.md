@@ -32,6 +32,9 @@
  |-l|Sets a langauge. The Source langauge is will be auto detected.|`Qtranslate.exe -s 'hello world' -l 'swahili' ` |
  |-f|Define a file input. The Supported filetypes are: <br> .txt, .lrc, .rtf, .md, .ini|`Qtranslate.exe -f 'noche oscura.txt' -l 'English' >> "En_NocheOscura.txt"`|
  |-ver|Get the version number. |`Qtranslate.exe -ver`|
+ |/debug|If you're unsure about any responces or errors you can use this flag to print all the behind the scene events. <br> This parameter does not require any argument.|`Qtranslate.exe -s "hello world" -l sw /debug`| 
+
+<br>
 
 For the ```-l``` switch , all standards are backward compatible and fall back to the recognized  ISO 639-1 language prefix which is normally used by the Google Translate API ,
 meaning that the command: ```Qtranslate.exe -s 'Noche Oscura' -l 'Albanian'``` (Using a native name) would be the same as running : ```Qtranslate.exe -s 'Noche Oscura' -l 'sq'``` (Using the ISO 639-1 prefix) , also the same as running:  ```Qtranslate.exe -s 'Noche Oscura' -l 'sqi'```  (Using the ISO 639-2/T prefix)  and  also the same as ```Qtranslate.exe -s 'Noche Oscura' -l 'alb'```  (Using the ISO 639-2/B prefix) <br>

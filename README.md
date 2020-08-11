@@ -23,7 +23,8 @@
   
   ### Installation
   Download and add to [path](https://en.wikipedia.org/wiki/PATH_%28variable%29).
-
+  
+  ### Demo
 <p align="center">
   <img src="https://github.com/KabueMurage/CL-QuickTranslate/blob/master/src/img/demo.gif?raw=true" alt=""/>
 </p>

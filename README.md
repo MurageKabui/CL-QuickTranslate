@@ -17,8 +17,8 @@
   
  
   To save time, this program offers a quick solution to use one liners to achieve the same goal , and with the possibility to fully automate the process
-  using batch scrips or just any other desired programming langauge. Quite useful when you want to translate simple words/sentences and file contents to 
-  any desired langauge. i.e <br> ```QTranslate.exe -f "My Discord Server Rules.txt" -l "french" >> Fr_DiscordRules.txt```
+  using batch scrips or just any other desired programming language. Quite handy when you want to translate simple words/sentences and file contents to 
+  any desired language. i.e <br> ```QTranslate.exe -f "My Discord Server Rules.txt" -l "french" >> Fr_DiscordRules.txt```
   
   
   ### Installation
@@ -34,7 +34,7 @@
  |Parameter|Function|Example|
  |--|--|--|
  |-s|Defines a string input.|`Qtranslate.exe -s 'hello world'`|
- |-l|Sets a langauge. The Source langauge is will be auto detected.|`Qtranslate.exe -s 'hello world' -l 'swahili' ` |
+ |-l|Sets a language. The Source language is will be auto detected.|`Qtranslate.exe -s 'hello world' -l 'swahili' ` |
  |-f|Define a file input. The Supported filetypes are: <br> .txt, .lrc, .rtf, .md, .ini|`Qtranslate.exe -f 'noche oscura.txt' -l 'English' >> "En_NocheOscura.txt"`|
  |-ver|Get the version number. |`Qtranslate.exe -ver`|
  |/debug|If you're unsure about any responces or errors you can use this flag to print all the behind the scene events. <br> This parameter does not require any argument.|`Qtranslate.exe -s "hello world" -l sw /debug`| 

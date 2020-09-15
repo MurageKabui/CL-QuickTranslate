@@ -45,7 +45,7 @@
 
 <br>
 
-For the ```-l``` switch , all standards are backward compatible and fall back to the recognized  ISO 639-1 language prefix which is normally used by the Google Translate API ,
+For the ```-l``` switch , all standards are backward compatible and fall back to the ISO 639-1 language prefix which is normally used by the Google Translate API ,
 meaning that the command: ```Qtranslate.exe -s 'Noche Oscura' -l 'Albanian'``` (Using a native name) would be the same as running : ```Qtranslate.exe -s 'Noche Oscura' -l 'sq'``` (Using the ISO 639-1 prefix) , also the same as running:  ```Qtranslate.exe -s 'Noche Oscura' -l 'sqi'```  (Using the ISO 639-2/T prefix)  and  also the same as ```Qtranslate.exe -s 'Noche Oscura' -l 'alb'```  (Using the ISO 639-2/B prefix) <br>
 
 
@@ -57,7 +57,7 @@ interface, therefore they haven't been included, although you can view all the s
   <summary> ISO codes cheat sheet [Click to reveal hidden contents.] </summary>
   
   > The list below shows the currently implemented ISO ids, sorted alphabetically by language, which may be used
-  > with the ```-l``` switch to set the destination language for translation.
+  > with the ```-l``` switch to set the destination language for translation. The source language is auto detected by default.
 
 ||ISO language name | *[ISO 639-1](https://en.wikipedia.org/wiki/ISO_639-1)*| *[ISO 639-2/T](https://en.wikipedia.org/wiki/ISO_639-2)*|*[ISO 639-2/B](https://en.wikipedia.org/wiki/ISO_639-2)*|
 |--|--|--|--|--|

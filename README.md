@@ -18,16 +18,20 @@
  
   To save time, this program offers a quick solution to use one liners to achieve the same goal , and with the possibility to fully automate the process
   using batch scrips or just any other desired programming language. Quite handy when you want to translate simple words/sentences and file contents to 
-  any desired language. i.e <br> ```QTranslate.exe -f "My Discord Server Rules.txt" -l "french" >> Fr_DiscordRules.txt```
+  any desired language. <br>
   
   
   ### Installation
-  Download and add to [path](https://en.wikipedia.org/wiki/PATH_%28variable%29).
+  Download and add to [path](https://en.wikipedia.org/wiki/PATH_%28variable%29). 
   
   ### Demo
 <p align="center">
   <img src="https://github.com/KabueMurage/CL-QuickTranslate/blob/master/src/img/demo.gif?raw=true" alt=""/>
 </p>
+
+> Translating Files Demo : <br> ```QTranslate.exe -f "My Discord Server Rules.txt" -l "french" >> Fr_DiscordRules.txt```
+
+<br>
 
 ### Syntax and Usage:
  

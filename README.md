@@ -48,17 +48,14 @@
 For the ```-l``` switch , all standards are backward compatible and fall back to the ISO 639-1 language prefix which is normally used by the Google Translate API ,
 meaning that the command: ```Qtranslate.exe -s 'Noche Oscura' -l 'Albanian'``` (Using a native name) would be the same as running : ```Qtranslate.exe -s 'Noche Oscura' -l 'sq'``` (Using the ISO 639-1 prefix) , also the same as running:  ```Qtranslate.exe -s 'Noche Oscura' -l 'sqi'```  (Using the ISO 639-2/T prefix)  and  also the same as ```Qtranslate.exe -s 'Noche Oscura' -l 'alb'```  (Using the ISO 639-2/B prefix) <br>
 
-
-### Some Common Issues.
-Some languages may contain non ASCII characters which are usually rendered as a question mark inside a diamond in files streams and question marks within the commandline
-interface, therefore they haven't been included, although you can view all the supported languages below.
 <details>
  
   <summary> ISO codes cheat sheet [Click to reveal hidden contents.] </summary>
   
-  > The list below shows the currently implemented ISO ids, sorted alphabetically by language, which may be used
-  > with the ```-l``` switch to set the destination language for translation. The source language is auto detected by default.
-
+  >  All languages standard may be used with the ```-l``` switch to set the destination language for translation.
+  >  The source language is auto detected by default.
+  > see full list at :https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwixuKmY9_LrAhVFCxoKHUgsB1kQFjAAegQIAxAB&url=https%3A%2F%2Fcloud.google.com%2Ftranslate%2Fdocs%2Flanguages&usg=AOvVaw0DS2aRvqlazR86JXJI1fsn
+  
 ||ISO language name | *[ISO 639-1](https://en.wikipedia.org/wiki/ISO_639-1)*| *[ISO 639-2/T](https://en.wikipedia.org/wiki/ISO_639-2)*|*[ISO 639-2/B](https://en.wikipedia.org/wiki/ISO_639-2)*|
 |--|--|--|--|--|
 |1|English |*en*|*eng*|eng|
@@ -124,8 +121,9 @@ interface, therefore they haven't been included, although you can view all the s
 |61|Vietnamese|*vi*|*vie*|vie|
 |62|Welsh|*cy*|*cym*|wel|
 |63|Xhosa|*xh*|*xho*|xho|
-|64|Zulu|*zu*|*zul*|zul|
-
+|64|Yoruba|*yo*|yor|yor|
+|65|Zulu|*zu*|*zul*|zul|
+...
 
 </details>
 

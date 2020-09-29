@@ -50,7 +50,7 @@ meaning that the command: ```Qtranslate.exe -s 'Noche Oscura' -l 'Albanian'``` (
 
 <details>
  
-  <summary> ISO codes cheat sheet [Click to reveal hidden contents.] </summary>
+  <summary> Some ISO codes cheat sheet [Click to reveal hidden contents.] </summary>
   
   >  All languages standard may be used with the ```-l``` switch to set the destination language for translation.
   >  The source language is auto detected by default.

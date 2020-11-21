@@ -12,36 +12,36 @@
   *As present, you may have noticed that the Web version of Google Translate opens with standard European language pairs by default
   (none of which you may EVER use) , neither nowhere in the [Languages menu](https://translate.google.com) is there the possibility to set default
   pair languages for translation , nor are the last used pairs synced to your account, which leaves you with the boring alternative to navigate and select
-  them from the drop-down menu or bookmark their [syntax appended url](https://translate.google.com/?langpair=en%7sw) for quick future use. 
-  And as a frequent user it might be a bit more painful to keep changing them.*
+  them from the drop-down menu or bookmark their [syntax appended url](https://translate.google.com/?langpair=en%7sw) for quick future use , and as a frequent user it might be a bit more painful to keep changing them.*
   
  
   To save time, this program offers a quick solution to use one liners to achieve the same goal , and with the possibility to fully automate the process
-  using batch scrips or just any other desired programming language. Quite handy when you want to translate simple words/sentences and file contents to 
+  using batch scrips or any desired programming / scripting  language, quite handy when you want to translate simple words/sentences and file contents to 
   any desired language. <br>
   
   
   ### Installation
-  Download and add to [path](https://en.wikipedia.org/wiki/PATH_%28variable%29). 
-  
+  Download and add to [path](https://en.wikipedia.org/wiki/PATH_%28variable%29).  Running ``Qtranslate.exe -v`` should print the current version number.
+
+### Syntax and Usage:
+ 
+ |Parameter|Function|Example|
+ |--|--|--|
+ |-s| Define a string input.|`Qtranslate.exe -s 'hello world'`|
+ |-l|Sets a language. The Source language is will be auto detected.|`Qtranslate.exe -s 'hello world' -l 'swahili' ` |
+ |-o| Optional parameter to parse the translated text to a file handle to avoid wrongly rendering non-ascii characters to the CLI.  The translated text is printed to the standard output by default. |`Qtranslate.exe -f 'En-EULA.rtf' -l 'ru' -o "Russian_EULA.txt"`|
+ |-f|Define a file input. The Supported filetypes are: <br> *.txt*, *.lrc*, *.rtf*, *.md*, *.ini*|`Qtranslate.exe -f 'Noche Oscura.txt' -l 'English' >> "En_NocheOscura.txt"`|
+ |-ver<br> -version <br> -v|Print the version number. |`Qtranslate.exe -ver`|
+ |/debug|If you're unsure about any response or errors you can use this flag to print all the behind the scene events. <br> This parameter does not require an argument.|`Qtranslate.exe -s "hello world" -l sw /debug`| 
+
+<br>
+
   ### Demo
 <p align="center">
   <img src="https://github.com/KabueMurage/CL-QuickTranslate/blob/master/src/img/demo.gif?raw=true" alt=""/>
 </p>
 
 > Translating Files Demo : <br> ```QTranslate.exe -f "My Discord Server Rules.txt" -l "french" >> Fr_DiscordRules.txt```
-
-<br>
-
-### Syntax and Usage:
- 
- |Parameter|Function|Example|
- |--|--|--|
- |-s|Defines a string input.|`Qtranslate.exe -s 'hello world'`|
- |-l|Sets a language. The Source language is will be auto detected.|`Qtranslate.exe -s 'hello world' -l 'swahili' ` |
- |-f|Define a file input. The Supported filetypes are: <br> .txt, .lrc, .rtf, .md, .ini|`Qtranslate.exe -f 'noche oscura.txt' -l 'English' >> "En_NocheOscura.txt"`|
- |-ver|Get the version number. |`Qtranslate.exe -ver`|
- |/debug|If you're unsure about any responces or errors you can use this flag to print all the behind the scene events. <br> This parameter does not require any argument.|`Qtranslate.exe -s "hello world" -l sw /debug`| 
 
 <br>
 

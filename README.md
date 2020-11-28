@@ -9,7 +9,7 @@
   
 <details>
  
-  <summary> About </summary>
+  <summary> About [click to expand]</summary>
   
  <img src="https://github.com/KabueMurage/CL-QuickTranslate/blob/master/src/img/logo.jpg?raw=true" align="left" alt="">
   

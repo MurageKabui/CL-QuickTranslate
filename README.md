@@ -6,6 +6,11 @@
 
   # CL-QuickTranslate
   
+  
+<details>
+ 
+  <summary> About </summary>
+  
  <img src="https://github.com/KabueMurage/CL-QuickTranslate/blob/master/src/img/logo.jpg?raw=true" align="left" alt="">
   
   
@@ -20,6 +25,9 @@
   any desired language. <br>
   
   
+</details>
+
+
   ### Installation
   Download and add to [path](https://en.wikipedia.org/wiki/PATH_%28variable%29).  Running ``Qtranslate.exe -v`` should print the current version number.
 

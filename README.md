@@ -49,6 +49,14 @@
 
 <br>
 
+ 
+ ### Demo
+<p align="center">
+  <img src="https://github.com/KabueMurage/CL-QuickTranslate/blob/master/src/img/demo.gif?raw=true" alt=""/>
+</p>
+
+<br>
+
  ### Known Issues
  
  #### 1. Unicode and Extended ASCII characters rendered wrongly in console window. (Displayed as question mark `?`)
@@ -67,11 +75,6 @@
  
  <br>
  
- ### Demo
-<p align="center">
-  <img src="https://github.com/KabueMurage/CL-QuickTranslate/blob/master/src/img/demo.gif?raw=true" alt=""/>
-</p>
-
 > Translating Files Demo : <br> ```QTranslate.exe -f "My Discord Server Rules.txt" -l "french" >> Fr_DiscordRules.txt```
 
 <br>

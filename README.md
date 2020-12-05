@@ -59,7 +59,11 @@
 
  ### Known Issues
  
- #### 1. Unicode and Extended ASCII characters rendered wrongly in console window. (Displayed as question mark `?`)
+ 
+<details>
+  
+  <summary> 1. Unicode and Extended ASCII characters rendered wrongly in console window. (Displayed as question mark `?`)  </summary>
+  
  > Although `CL-QuickTranslate` writes output based on the current console code page, which depends
  > on a system's locale by default, the current code page may handle only a subset of available Unicode
  > characters, so if you try to display characters that are not mapped to the current code page, the console 
@@ -73,14 +77,28 @@
  > `CL-QuickTranslate.exe -s "hello world" -l ru -o "%l-HelloWorld.txt"` <br>
  > ` > Saved to file : ru-HelloWorld.txt`
  
- <br>
  
-> Translating Files Demo : <br> ```QTranslate.exe -f "My Discord Server Rules.txt" -l "french" >> Fr_DiscordRules.txt```
+</details>
+
 
 <br>
 
+### Commandline Notes
+
 For the ```-l``` switch , all standards are backward compatible and fall back to the ISO 639-1 language prefix which is normally used by the Google Translate API ,
 meaning that the command: ```Qtranslate.exe -s 'Noche Oscura' -l 'Albanian'``` (Using a native name) would be the same as running : ```Qtranslate.exe -s 'Noche Oscura' -l 'sq'``` (Using the ISO 639-1 prefix) , also the same as running:  ```Qtranslate.exe -s 'Noche Oscura' -l 'sqi'```  (Using the ISO 639-2/T prefix)  and  also the same as ```Qtranslate.exe -s 'Noche Oscura' -l 'alb'```  (Using the ISO 639-2/B prefix) <br>
+
+The `-o` switch supports saving with specified prefixes as a substitute for special long names. : <br>
+
+|prefix|Long name  |
+|--|--|
+| %l| The used ISO 639-1 language prefix. |
+|%f| Used Filename without file extension. |
+
+
+  Example : <br>
+   `CL-QuickTranslate.exe -f "Pc Maintenance Guide.txt" -l sw -o "%l_%f.txt"` <br>
+   `> Saved to file : SW_Pc Maintenance Guide.txt`  <br>
 
 <details>
  

@@ -48,6 +48,21 @@
 </details>
 
 <br>
+
+ ### Known Issues
+ 
+ #### 1. Unicode and Extended ASCII characters rendered wrongly in console window. (Displayed as question mark `?`)
+ > Although `CL-QuickTranslate` writes output based on the current console code page, which depends
+ > on a system's locale by default, the current code page may handle only a subset of available Unicode
+ > characters, so if you try to display characters that are not mapped to the current code page, the console 
+ > won't be able to render or represent them accurately. To fix this, you can change to an active code page which may
+ > allow rendering them using [chcp](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/chcp) 
+ > by running the command `chcp 65001 && Cl-Quicktranslate.exe ..`. However, if you want to render Unicode output reliably ,
+ > set the console font to a non-raster or TrueType font such as Consolas or Lucida Console then use 
+ > logical shift or redirectional operators to parse the unicode output to file handles. Or even better, use
+ > the `-o` switch which is provided as a parameter to help you to parse the output of a command to a local file that you specify. 
+ 
+ <br>
  
  ### Demo
 <p align="center">

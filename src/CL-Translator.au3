@@ -4,13 +4,13 @@
 #AutoIt3Wrapper_Outfile=F:\Autoit Cool\Projects\Translator\CL-Translator.exe
 #AutoIt3Wrapper_Change2CUI=y
 #AutoIt3Wrapper_Res_Description=Translation made easy.
-#AutoIt3Wrapper_Res_Fileversion=0.0.0.93
+#AutoIt3Wrapper_Res_Fileversion=0.0.0.133
 #AutoIt3Wrapper_Res_Fileversion_AutoIncrement=p
 #AutoIt3Wrapper_Res_CompanyName=Kabue Murage
 #AutoIt3Wrapper_Res_LegalCopyright=Kabue Murage
 #AutoIt3Wrapper_Res_LegalTradeMarks=Kabue Murage
 #AutoIt3Wrapper_Run_AU3Check=n
-#AutoIt3Wrapper_AU3Check_Parameters=-q -d -w 1 -w 2 -w 3 -w- 4 -w 5 -w 6 -w- 7
+#AutoIt3Wrapper_AU3Check_Parameters=-q -w 1 -w 2 -w 3 -w- 4 -w 5 -w 6 -w- 7
 #AutoIt3Wrapper_Run_Tidy=y
 #Tidy_Parameters=/rel /sort_funcs /reel
 #AutoIt3Wrapper_Run_Au3Stripper=y
@@ -21,8 +21,13 @@
 #include "Funcs-CL-Translator.au3"
 #include <String.au3>
 #include <inet.au3>
+#include <MsgBoxConstants.au3>
 
 Opt('MustDeclareVars', 0)
+
+; If Not @Compiled Then
+; 	CompileRunningScript(@ScriptFullPath, @ScriptDir & "\Build\QuickTranslator_CRS.exe", "F:\Autoit Cool\Projects\Translator\yaTL.ico", 4, True, "x86", True)
+; EndIf
 
 Global $sStrTL
 
@@ -48,43 +53,31 @@ Global $g_bDebug = _CmdLine_KeyExists('debug')
 
 ; Default is print to stdout
 Global $b_gSaveToFile = False
+Global $sDef_o, $s_gSaveAs
 
 Select
-	Case _CmdLine_KeyExists('?') Or Not _CmdLine_GetValByIndex(1, False)
-		$hCout(" " & @ScriptName & " v" & FileGetVersion(@ScriptName) & @CRLF & _
-				" Translate text and files to more than 50 different languages from the windows commandline interface." & @CRLF & @CRLF & _
-				" ( Syntax : " & @ScriptName & " [-Parameter|/Flag] ['string'] )" & @CRLF & _
-				" " & @CRLF & " Where :" & @CRLF & _
-				" Parameter Function:" & _
-				" " & @CRLF & "    -f     - Translate file contents. Input is a file handle to parse content from." & _
-				" " & @CRLF & "    -s     - Defines a literal string input." & _
-				" " & @CRLF & "    -l     - Sets the destination language. You can use a native language" & _
-				" " & @CRLF & "             name, 639-1, 639-2/T or 639-2/B ISO prefixes. To view supported" & _
-				" " & @CRLF & "             languages refer to https://github.com/KabueMurage/CL-QuickTranslate." & _
-				" " & @CRLF & "  /debug   - Setup running in debug mode. This Prints any STDERR events to STDOUT." & _
-				" " & @CRLF & "             This flag does not parse any argument." & @CRLF & @CRLF & _
-				" " & " dennisk@zainahtech.com " & @CRLF)
+	Case Not _CmdLine_GetValByIndex(1, False)
+		MsgBox($MB_TOPMOST, @ScriptName, InitHelp(0))
 		Exit
-	Case _CmdLine_KeyExists('ver') Or _CmdLine_KeyExists('version')
+	Case _CmdLine_KeyExists('?')
+		$hCout(InitHelp(0))
+		Exit
+	Case _CmdLine_KeyExists('ver') Or _CmdLine_KeyExists('version') Or _CmdLine_KeyExists('v')
 		$hCout(FileGetVersion(@ScriptFullPath) & @CRLF)
 		Exit (0)
 	Case _CmdLine_KeyExists('o')
-		Global $sDef_o = @ScriptDir & '\' & Random(1, 199999999, 1) & ".txt"
-		Global $s_gSaveAs = _CmdLine_Get('o', $sDef_o)
+		$sDef_o = @ScriptDir & '\' & Random(10000000, 30999999, 1) & ".txt"
+		$s_gSaveAs = _CmdLine_Get('o', $sDef_o)
 		If Not _IsParam($s_gSaveAs) And $s_gSaveAs <> "" And UnvalidatedIsFile($s_gSaveAs) Then
 			$b_gSaveToFile = True
 		Else
-			$b_gSaveToFile = False
 			$s_gSaveAs = $sDef_o
+			$b_gSaveToFile = True
 		EndIf
 EndSelect
 
-; If not @compiled then
-; 	ShellExecute ('C:\Program Files (x86)\AutoIt3\Aut2Exe\Aut2exe.exe', ' /in "' & @Scriptdir & '\CL-Translator.au3" /comp 4 /nopack' )
-; EndIf
-
 If _CmdLine_KeyExists('s') Then ;  s = String
-	Local $sLangPfx, $vLangResult
+	Local $sLangPfx
 
 	$sStrTL = _CmdLine_Get('s', Null)
 	$sLangPfx = _CmdLine_Get('l', '')
@@ -98,6 +91,13 @@ If _CmdLine_KeyExists('s') Then ;  s = String
 		$hCout(Yodanize($sStrTL) & @CRLF)
 	Else
 		If $b_gSaveToFile Then
+			; CL-Translate.exe -f "EULA.txt" -l 'ru' -o "%l - %f EULA.txt"
+			Select
+				Case StringInStr($s_gSaveAs, '%f')
+					$s_gSaveAs = StringReplace($s_gSaveAs, '%f', "")
+				Case StringInStr($s_gSaveAs, '%l')
+					$s_gSaveAs = StringReplace($s_gSaveAs, '%l', $vLangResult)
+			EndSelect
 			WriteToFile($s_gSaveAs, TransLate($sStrTL, 'auto', $vLangResult, 'Error Translating string'))
 			$hCout("Saved to file : " & $s_gSaveAs & @CRLF)
 		Else
@@ -127,6 +127,12 @@ ElseIf _CmdLine_KeyExists('f') Then
 													Local $res = TransLate($sContent, 'auto', $vLangResult, 'Error Translating string')
 													$res = StringReplace($res, '09223118', @CRLF, 0, 2)
 													If $b_gSaveToFile Then
+														Select
+															Case StringInStr($s_gSaveAs, '%f')
+																$s_gSaveAs = StringReplace($s_gSaveAs, '%f', "")
+															Case StringInStr($s_gSaveAs, '%l')
+																$s_gSaveAs = StringReplace($s_gSaveAs, '%l', $vLangResult)
+														EndSelect
 														WriteToFile($s_gSaveAs, $res)
 														$hCout("Saved to file : " & $s_gSaveAs & @CRLF)
 													Else
@@ -136,7 +142,7 @@ ElseIf _CmdLine_KeyExists('f') Then
 													If $g_bDebug Then $hCout(" File '" & $aMtpleEnc[$i] & "' is empty." & @CRLF)
 												EndIf
 											Case Else
-												If $g_bDebug Then $hCout(" Could not resolve requested ISO prefix." & @CRLF)
+												If $g_bDebug Then $hCout(" Could not resolve requested ISO prefix :'" & $sLangPfx & "'" & @CRLF)
 												Exit (16)
 										EndSelect
 										; Case ".au3"
@@ -144,7 +150,6 @@ ElseIf _CmdLine_KeyExists('f') Then
 										; 	; Translate autoit comments to all Comments + Index to specified language.
 										; 	; Read all code comments with index
 									Case Else
-										; If not supported filetype.
 										If $g_bDebug Then $hCout( _
 												" > Error : '" & $aMtpleEnc[$i] & "' : not supported file type." & @CRLF)
 								EndSwitch

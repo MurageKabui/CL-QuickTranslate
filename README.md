@@ -35,10 +35,17 @@
  |-ver<br> -version <br> -v|Print the current version and build information. |`none`|
  |/debug|Sets up running in debug mode. If you're unsure about any response or errors you can use this flag to print all the behind the scene events. <br> This parameter does parse any argument.|`none`| 
 
+
+<details>
+  
+  <summary> Commandline Preview [Click to reveal hidden contents.] </summary>
+  
 <p align="center">
   <img src="https://github.com/KabueMurage/CL-QuickTranslate/blob/master/src/img/syn.png?raw=true" alt="Commandline Syntax Preview"/>
 </p>
 
+
+</details>
 
 <br>
  

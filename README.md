@@ -16,9 +16,9 @@
   them from the drop-down menu or bookmark their [syntax appended url](https://translate.google.com/?langpair=en%7sw) for quick future use , and as a frequent user it might be a bit more painful to keep changing them.*
   
  
-  To save time, this program offers a quick solution to use one liners to achieve the same goal , and with the possibility to fully automate the process
-  using batch scrips or any desired programming / scripting  language, quite handy when you want to translate simple words/sentences and file contents to 
-  any desired language. <br>
+  To save time, this program offers a quick solution to use one liners to achieve the same goal , and with the possibility to fully automate translations
+  using batch scrips or any desired programming / scripting  language, quite handy for translating simple words/sentences or file contents to 
+  a desired language. <br>
   
 
   ### Installation
@@ -28,12 +28,12 @@
  
  |Parameter|Function|Default value|
  |--|--|--|
- |-s| Define a string input.|`Null`|
- |-l|Sets a language. The Source language is will be auto detected.|`Null` |
- |-o| Optional parameter to parse the translated text to a file handle to avoid wrongly rendering non-ascii characters to the CLI.  The translated text is printed to the standard output by default. |A new file {Random Number}.txt|
- |-f|Define a file input. The Supported filetypes are: <br> *.txt*, *.lrc*, *.rtf*, *.md*, *.ini*|`none`|
- |-ver<br> -version <br> -v|Print the version number. |`none`|
- |/debug|If you're unsure about any response or errors you can use this flag to print all the behind the scene events. <br> This parameter does not require an argument.|`none`| 
+ |-s| Sets a text input. Text containing white spaces should be enclosed in double-quotes.|`Null`|
+ |-l|Sets the destination language using the desired [ISO prefix](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwixuKmY9_LrAhVFCxoKHUgsB1kQFjAAegQIAxAB&url=https://cloud.google.com/translate/docs/languages&usg=AOvVaw0DS2aRvqlazR86JXJI1fsn) . The Source language is will be auto detected.|`None` <br> The prefix **must** be specified. |
+ |-o| Specifies the path and name of the translated file to export a translation. The translated text is printed to the standard output by default. <br> Saving Prefixes :  <br> %l -  Language ISO Prefix.<br> %f - Filename.|A new file with a unique Random integer of filetype : `.txt`|
+ | -f|Specifies the path and file name of the file to be translated. Long filenames should be enclosed in double-quotes. <br> *.txt*, *.lrc*, *.rtf*, *.md*, *.ini*|`none`|
+ |-ver<br> -version <br> -v|Print the current version and build information. |`none`|
+ |/debug|Sets up running in debug mode. If you're unsure about any response or errors you can use this flag to print all the behind the scene events. <br> This parameter does parse any argument.|`none`| 
 
 <br>
 

@@ -61,6 +61,9 @@
  > set the console font to a non-raster or TrueType font such as Consolas or Lucida Console then use 
  > logical shift or redirectional operators to parse the unicode output to file handles. Or even better, use
  > the `-o` switch which is provided as a parameter to help you to parse the output of a command to a local file that you specify. 
+ > Example : 
+ > `CL-QuickTranslate.exe -s "hello world" -l ru -o "%l-HelloWorld.txt"` <br>
+ > ` > Saved to file : ru-HelloWorld.txt`
  
  <br>
  

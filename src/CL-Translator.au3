@@ -1,10 +1,11 @@
 #NoTrayIcon
 #Region ;**** Directives created by AutoIt3Wrapper_GUI ****
 #AutoIt3Wrapper_Icon=F:\Autoit Cool\Projects\Translator\yaTL.ico
-#AutoIt3Wrapper_Outfile=F:\Autoit Cool\Projects\Translator\CL-Translator.exe
+#AutoIt3Wrapper_Outfile=F:\Autoit Cool\Projects\Translator\CL-QuickTranslate.exe
+#AutoIt3Wrapper_Compression=3
 #AutoIt3Wrapper_Change2CUI=y
 #AutoIt3Wrapper_Res_Description=Translation made easy.
-#AutoIt3Wrapper_Res_Fileversion=0.0.0.133
+#AutoIt3Wrapper_Res_Fileversion=0.0.0.137
 #AutoIt3Wrapper_Res_Fileversion_AutoIncrement=p
 #AutoIt3Wrapper_Res_CompanyName=Kabue Murage
 #AutoIt3Wrapper_Res_LegalCopyright=Kabue Murage
@@ -129,9 +130,15 @@ ElseIf _CmdLine_KeyExists('f') Then
 													If $b_gSaveToFile Then
 														Select
 															Case StringInStr($s_gSaveAs, '%f')
-																$s_gSaveAs = StringReplace($s_gSaveAs, '%f', "")
+																; FQPN to filename.
+																Local $sRep = StringRegExpReplace($aMtpleEnc[$i], "^.*\\", "")
+																; strip extension
+																$sRep = StringReplace($sRep, _GetFileExtension($sRep), "")
+																
+																$s_gSaveAs = StringReplace($s_gSaveAs, '%f', $sRep)
+																ContinueCase
 															Case StringInStr($s_gSaveAs, '%l')
-																$s_gSaveAs = StringReplace($s_gSaveAs, '%l', $vLangResult)
+																$s_gSaveAs = StringReplace($s_gSaveAs, '%l', StringUpper($vLangResult))
 														EndSelect
 														WriteToFile($s_gSaveAs, $res)
 														$hCout("Saved to file : " & $s_gSaveAs & @CRLF)

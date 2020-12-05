@@ -1,22 +1,4 @@
 #NoTrayIcon
-#Region ;**** Directives created by AutoIt3Wrapper_GUI ****
-#AutoIt3Wrapper_Icon=F:\Autoit Cool\Projects\Translator\yaTL.ico
-#AutoIt3Wrapper_Outfile=F:\Autoit Cool\Projects\Translator\CL-QuickTranslate.exe
-#AutoIt3Wrapper_Compression=3
-#AutoIt3Wrapper_Change2CUI=y
-#AutoIt3Wrapper_Res_Description=Translation made easy.
-#AutoIt3Wrapper_Res_Fileversion=0.0.0.137
-#AutoIt3Wrapper_Res_Fileversion_AutoIncrement=p
-#AutoIt3Wrapper_Res_CompanyName=Kabue Murage
-#AutoIt3Wrapper_Res_LegalCopyright=Kabue Murage
-#AutoIt3Wrapper_Res_LegalTradeMarks=Kabue Murage
-#AutoIt3Wrapper_Run_AU3Check=n
-#AutoIt3Wrapper_AU3Check_Parameters=-q -w 1 -w 2 -w 3 -w- 4 -w 5 -w 6 -w- 7
-#AutoIt3Wrapper_Run_Tidy=y
-#Tidy_Parameters=/rel /sort_funcs /reel
-#AutoIt3Wrapper_Run_Au3Stripper=y
-#Au3Stripper_Parameters=/rm /sf /pe
-#EndRegion ;**** Directives created by AutoIt3Wrapper_GUI ****
 #include-once
 
 #include "Funcs-CL-Translator.au3"

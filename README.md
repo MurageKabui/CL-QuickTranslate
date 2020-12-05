@@ -7,10 +7,6 @@
   # CL-QuickTranslate
   
   
-<details>
- 
-  <summary> About [click to expand]</summary>
-  
  <img src="https://github.com/KabueMurage/CL-QuickTranslate/blob/master/src/img/logo.jpg?raw=true" align="left" alt="">
   
   
@@ -24,23 +20,20 @@
   using batch scrips or any desired programming / scripting  language, quite handy when you want to translate simple words/sentences and file contents to 
   any desired language. <br>
   
-  
-</details>
-
 
   ### Installation
   Download and add to [path](https://en.wikipedia.org/wiki/PATH_%28variable%29).  Running ``Qtranslate.exe -v`` should print the current version number.
 
 ### Syntax and Usage:
  
- |Parameter|Function|Example|
+ |Parameter|Function|Default value|
  |--|--|--|
- |-s| Define a string input.|`Qtranslate.exe -s 'hello world'`|
- |-l|Sets a language. The Source language is will be auto detected.|`Qtranslate.exe -s 'hello world' -l 'swahili' ` |
- |-o| Optional parameter to parse the translated text to a file handle to avoid wrongly rendering non-ascii characters to the CLI.  The translated text is printed to the standard output by default. |`Qtranslate.exe -f 'En-EULA.rtf' -l 'ru' -o "Russian_EULA.txt"`|
- |-f|Define a file input. The Supported filetypes are: <br> *.txt*, *.lrc*, *.rtf*, *.md*, *.ini*|`Qtranslate.exe -f 'Noche Oscura.txt' -l 'English' >> "En_NocheOscura.txt"`|
- |-ver<br> -version <br> -v|Print the version number. |`Qtranslate.exe -ver`|
- |/debug|If you're unsure about any response or errors you can use this flag to print all the behind the scene events. <br> This parameter does not require an argument.|`Qtranslate.exe -s "hello world" -l sw /debug`| 
+ |-s| Define a string input.|`Null`|
+ |-l|Sets a language. The Source language is will be auto detected.|`Null` |
+ |-o| Optional parameter to parse the translated text to a file handle to avoid wrongly rendering non-ascii characters to the CLI.  The translated text is printed to the standard output by default. |A new file {Random Number}.txt|
+ |-f|Define a file input. The Supported filetypes are: <br> *.txt*, *.lrc*, *.rtf*, *.md*, *.ini*|`none`|
+ |-ver<br> -version <br> -v|Print the version number. |`none`|
+ |/debug|If you're unsure about any response or errors you can use this flag to print all the behind the scene events. <br> This parameter does not require an argument.|`none`| 
 
 <br>
 

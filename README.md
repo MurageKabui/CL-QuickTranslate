@@ -62,7 +62,7 @@
  
 <details>
   
-  <summary> 1. Unicode and Extended ASCII characters rendered wrongly in console window. (Displayed as question mark `?`)  </summary>
+  <summary> 1. Unicode and Extended ASCII characters rendered wrongly in console window. (Displayed as question mark `?`) <br> [Expand Fix] </summary>
   
  > Although `CL-QuickTranslate` writes output based on the current console code page, which depends
  > on a system's locale by default, the current code page may handle only a subset of available Unicode

@@ -16,9 +16,7 @@
   them from the drop-down menu or bookmark their [syntax appended url](https://translate.google.com/?langpair=en%7sw) for quick future use , and as a frequent user it might be a bit more painful to keep changing them.*
   
  
-  To save time, this program offers a quick solution to use one liners to achieve the same goal , and with the possibility to fully automate translations
-  using batch scrips or any desired programming / scripting  language, quite handy for translating simple words/sentences or file contents to 
-  a desired language. <br>
+  To save time, you can use one liners from your commandline interface or fully automate file translations using batch scrips or any desired scripting  language.<br>
   
 
   ### Installation
@@ -29,7 +27,7 @@
  |Parameter|Function|Default value|
  |--|--|--|
  |-s| Sets a text input. Text containing white spaces should be enclosed in double-quotes.|`Null`|
- |-l|Sets the destination language using the desired [ISO prefix](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwixuKmY9_LrAhVFCxoKHUgsB1kQFjAAegQIAxAB&url=https://cloud.google.com/translate/docs/languages&usg=AOvVaw0DS2aRvqlazR86JXJI1fsn) . The Source language is will be auto detected.|`None` <br> The prefix **must** be specified. |
+ |-l|Sets the destination language using a specified [ISO prefix](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwixuKmY9_LrAhVFCxoKHUgsB1kQFjAAegQIAxAB&url=https://cloud.google.com/translate/docs/languages&usg=AOvVaw0DS2aRvqlazR86JXJI1fsn) or a language identifier for Fun Translations (**yoda , valspeak, shakespeare jive cockney , brooklyn, ermahgerd or minion**). <br> The Source language is will be auto detected. |`None` <br> The identifier **must** be specified. |
  |-o| Specifies the path and name of the translated file to export a translation. The translated text is printed to the standard output by default. <br> Saving Prefixes :  <br> %l -  Language ISO Prefix.<br> %f - Filename.|A new file with a unique Random integer of filetype : `.txt`|
  | -f|Specifies the path and file name of the file to be translated. Long filenames should be enclosed in double-quotes. <br> *.txt*, *.lrc*, *.rtf*, *.md*, *.ini*|`none`|
  |-ver<br> -version <br> -v|Print the current version and build information. |`none`|
